@@ -4,7 +4,7 @@ Spring boot starter ngrok。
 
 ### Usage
 
-* Start local ngrok agent ： ngrok start --none
+* Start local ngrok tunnels ： ngrok start --none
 
 * Add ngrok-spring-boot-starter in your pom.xml:
 ```xml
@@ -18,7 +18,11 @@ Spring boot starter ngrok。
 
 ### Functions
 
-* ngrok management: http://localhost:4040, such as url replay etc.
+* ngrok web inspection: http://localhost:4040, such as url replay etc.
+
+### how it works
+
+The starter to operate ngrok via API(http://127.0.0.1:4040/api/)
 
 ### References
 
