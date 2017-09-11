@@ -11,7 +11,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-boot.version>1.4.2.RELEASE</spring-boot.version>
-        <hessian.version>4.0.38</hessian.version>
     </properties>
 
     <developers>
