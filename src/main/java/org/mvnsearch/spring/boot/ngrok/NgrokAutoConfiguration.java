@@ -1,5 +1,6 @@
 package org.mvnsearch.spring.boot.ngrok;
 
+import org.mvnsearch.spring.boot.ngrok.analyzer.NgrokConnectionFailureException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -7,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PreDestroy;
+import java.io.IOException;
 
 /**
  * ngrok auto configuration
@@ -21,9 +23,13 @@ public class NgrokAutoConfiguration {
     private Integer serverPort;
 
     @Bean
-    NgrokTunnel ngrokTunnel() throws Exception {
+    NgrokTunnel ngrokTunnel() throws IOException {
         NgrokTunnel ngrokTunnel = new NgrokTunnel(serverPort);
-        ngrokTunnel.start();
+        try {
+            ngrokTunnel.start();
+        } catch (Exception e) {
+            throw new NgrokConnectionFailureException(e);
+        }
         log.info("ngrok public url:" + ngrokTunnel.getPublicUrl());
         return ngrokTunnel;
     }
