@@ -18,7 +18,9 @@ Spring boot starter ngrok。
 
 ### Functions
 
-* ngrok web inspection: http://localhost:4040, such as url replay etc.
+* ngrok web inspection: http://localhost:4040
+* Inspecting your traffic
+* Replaying requests
 
 ### how it works
 
