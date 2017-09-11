@@ -9,7 +9,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  *
  * @author linux_china
  */
-@ConfigurationProperties(prefix = "endpoints.hessian", ignoreUnknownFields = false)
 public class NgrokEndpoint extends AbstractEndpoint<TunnelDetail> {
     @Autowired
     private NgrokTunnel tunnel;
