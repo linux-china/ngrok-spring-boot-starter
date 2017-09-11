@@ -24,7 +24,7 @@ Spring boot starter ngrok。
 
 ### how it works
 
-The starter to operate ngrok via API(http://127.0.0.1:4040/api/)
+The starter automate ngrok via API(http://127.0.0.1:4040/api/)
 
 ### References
 
