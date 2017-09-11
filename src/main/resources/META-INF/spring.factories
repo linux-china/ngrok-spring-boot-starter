@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.mvnsearch.spring.boot.ngrok.NgrokAutoConfiguration
+org.springframework.boot.diagnostics.FailureAnalyzer=\
+org.mvnsearch.spring.boot.ngrok.analyzer.NgrokConnectionFailureAnalyzer
