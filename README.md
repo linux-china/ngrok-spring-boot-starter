@@ -14,7 +14,11 @@ Spring boot starter for ngrok, easy to expose a local Spring Boot Application to
                      <version>1.0.0-SNAPSHOT</version>
           </dependency>
 ```
-* Open http://localhost:8080/ngrok to get ngrok public url or get url from Spring Boot console. 
+* Get public url for spring boot application:
+    
+    * ngrok web inspection http://localhost:4040  or ngrok terminal console
+    * ngrok endpoint in spring boot application: http://localhost:8080/ngrok
+    * public url output in Spring Boot console
 
 ### Functions
 
