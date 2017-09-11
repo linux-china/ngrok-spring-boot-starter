@@ -30,7 +30,7 @@ public class NgrokAutoConfiguration {
         } catch (Exception e) {
             throw new NgrokConnectionFailureException(e);
         }
-        log.info("ngrok public url:" + ngrokTunnel.getPublicUrl());
+        log.info("ngrok public url: " + ngrokTunnel.getPublicUrl());
         return ngrokTunnel;
     }
 
