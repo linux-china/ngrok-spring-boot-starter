@@ -1,10 +1,10 @@
 ngrok-spring-boot-start
 =========================
-Spring boot starter ngrok。
+Spring boot starter for ngrok, easy to expose a local Spring Boot Application to the internet
 
 ### Usage
 
-* Start local ngrok tunnels ： ngrok start --none
+* Start local ngrok tunnels： ngrok start --none
 
 * Add ngrok-spring-boot-starter in your pom.xml:
 ```xml
